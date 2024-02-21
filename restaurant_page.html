@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Info</title>
+  <style>
+     body {
+      background-image: url('img/background_restaurant.jpg'); 
+      background-size: cover;
+      background-repeat: no-repeat; 
+      background-position: center;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body background="img/background_restaurant.jpg">
+  <div class="container">
+    <h1 class="text-center mb-5">Bayroute</h1>
+    
+    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="info-tab" data-bs-toggle="tab" href="#info" role="tab" aria-controls="info" aria-selected="true">Info</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="menu-tab" data-bs-toggle="tab" href="#menu" role="tab" aria-controls="menu" aria-selected="false">Menu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="address-tab" data-bs-toggle="tab" href="#address" role="tab" aria-controls="address" aria-selected="false">Address</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="youtube-tab" data-bs-toggle="tab" href="#youtube" role="tab" aria-controls="youtube" aria-selected="false">YouTube</a>
+      </li>
+    </ul>
+
+    <div class="tab-content mt-4" id="myTabContent">
+      <div class="tab-pane fade show active" id="info" role="tabpanel" aria-labelledby="info-tab">
+        <p><b>Popular Dishes</b>
+            Stuffed Falafel, Beetroot Borani, Kebab Istanbuli, Baklava Ice Cream, Mediterranean Touch, Halloumi Cigars
+            <br><br>
+            <b>People Say This Place Is Known For</b>
+            Fantastic Food and Service, Clean Bathrooms, Great Lighting, Sophisticated, Worth the Price, Excellent Variety
+        </p>
+        <h2>More Info</h2>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><i class="fas fa-check text-success me-2"></i> Home Delivery</li>
+          <li class="list-group-item"><i class="fas fa-check text-success me-2"></i> Takeaway Available</li>
+          <li class="list-group-item"><i class="fas fa-check text-success me-2"></i> Full Bar Available</li>
+          <li class="list-group-item"><i class="fas fa-check text-success me-2"></i> Valet Parking Available</li>
+          <li class="list-group-item"><i class="fas fa-check text-success me-2"></i> Indoor Seating</li>
+        </ul>
+      </div>
+      <div class="tab-pane fade" id="menu" role="tabpanel" aria-labelledby="menu-tab">
+        <div id="menuCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active d-flex justify-content-center align-items-center">
+                <img src="img/menu2.jpg" class="d-block" style="max-width: 30%;" alt="Menu Item 1">
+              </div>              
+              <div class="carousel-item">
+                <img src="img/menu1.jpg" class="d-block" style="max-width: 30%;" alt="Menu Item 2">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#menuCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#menuCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
+      </div>
+      <div class="tab-pane fade" id="address" role="tabpanel" aria-labelledby="address-tab">
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.932059249418!2d72.8225840738372!3d19.110636250886945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9491b0e1125%3A0x2d5e2778c07ce203!2sBayroute%20Juhu!5e0!3m2!1sen!2sin!4v1708525923971!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="address-info">
+          <p><strong>Address:</strong> Mumbai, India</p>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="youtube" role="tabpanel" aria-labelledby="youtube-tab">
+        <div class="embed-responsive embed-responsive-16by9">
+         <centre><iframe width="560" height="315" src="https://www.youtube.com/embed/4UsA1UdxTe0?si=BI0K3qqx1rtD1iKQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> </centre>       </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script>
